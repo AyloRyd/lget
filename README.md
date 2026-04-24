@@ -1,38 +1,40 @@
 # lget
 
-![lget demo](assets/demo.gif)
+Original repository: [pencelheimer/lget](https://github.com/pencelheimer/lget)
 
 A fast, interactive command-line tool to fetch open-source licenses directly from the [SPDX repository](https://github.com/spdx/license-list-data).
 
-## Installation
+## Run with npx
 
 ```bash
-cargo install lget
+npx lget-cli
 ```
 
-Or with nix (there is no binary cache yet):
+## Or install globally with npm
+
 ```bash
-nix run 'github:pencelheimer/lget'
+npm install -g lget-cli
+lget-cli
 ```
 
-## Usage
+## Usage examples
 
 Run interactively to select a license from a TUI menu:
 ```bash
-lget
+npx lget-cli
 ```
 
-Or pass a license directly to bypass the menu (great for scripts):
+Pass a license directly to bypass the menu:
 ```bash
-lget -l mit
+npx lget-cli -l mit
 ```
 
 Force overwrite an existing LICENSE file without prompting:
 ```bash
-lget -f -l apache2
+npx lget-cli -f -l apache2
 ```
 
-Suppress all output using the quiet flag:
+Suppress all output with the quiet flag:
 ```bash
-lget -f -l gpl3 -q
+npx lget-cli -f -l gpl3 -q
 ```

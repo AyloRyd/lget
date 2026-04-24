@@ -1,5 +1,5 @@
 {
-  "name": "lget",
+  "name": "lget-cli",
   "version": "0.1.0",
   "description": "A fast and interactive CLI tool to download open-source licenses from SPDX",
   "main": "npm/wrapper.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pencelheimer/lget.git"
+    "url": "git+https://github.com/ayloryd/lget.git"
   },
   "files": [
     "npm/wrapper.js",
@@ -23,7 +23,7 @@
     "spdx",
     "developer-tools"
   ],
-  "author": "pencelheimer",
+  "author": "ayloryd",
   "license": "MIT",
   "dependencies": {
     "tar": "^6.2.0"
