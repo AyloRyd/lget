@@ -38,3 +38,8 @@ Suppress all output with the quiet flag:
 ```bash
 npx lget-cli -f -l gpl3 -q
 ```
+
+## TODO
+- Shell completions
+- Man page
+- TLDR page
